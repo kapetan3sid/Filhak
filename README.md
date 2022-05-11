@@ -153,7 +153,7 @@ Our team have extensive experience in regards to writting in **Go** as well as e
 And currently we are developing first phase of:
 - **Testground -  platform for testing, benchmarking, and simulating distributed and p2p systems at scale infrastructure and software revamp**.
 
-Furthermore, we followed the FVM development since its inception. We  participated in various FVM AMA sessions as well as FVM Early Builders Check In where we indicated that we want to develop **Hardhat** inspired development enviroment for **FVM**
+Furthermore, we followed the FVM development since its inception. We  participated in various **FVM AMA** sessions as well as **FVM Early Builders Check In** where we indicated that we want to develop **Hardhat** inspired development enviroment for **FVM**
 ## Team code repositories
 
 [fil-filhak](https://github.com/Bloxico/fil-filhak)
