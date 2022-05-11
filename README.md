@@ -4,7 +4,7 @@
 
 **Link to RFP:** Please link to the RFP that you are submitting a proposal for.
 
-**RFP Category:** devtools-libraries
+**RFP Category:** `devtools-libraries`
 
 **Proposer:** @thedivic
 
