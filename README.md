@@ -164,32 +164,32 @@ Sum up the total requested budget across all milestones, and include that figure
 Maintenance and Upgrade Plans
 
 We have no plan on maintaining the SDK in this proposal. This should be arranged either at a later time or in another program.
-Team
-Contact Info
+# Team
+## Contact Info
 
-On Filecoin slack:
+**On Filecoin slack:**
 
     @philippe Métais
     @thomas
 
-Team Members
+## Team Members
 
     Philippe Métais: @PhilippeMts
     Thomas Chataigner: @tchataigner
 
-Team Member LinkedIn Profiles
+## Team Member LinkedIn Profiles
 
     Thomas Chataigner:
 
-Team Website
+## Team Website
 
 https://bloxico.com/
-**Relevant Experience**
+## Relevant Experience 
 
 We already have some experience in handling wasm runtime and development of tooling around it. We spent last year designing and building the Holium project. It allowed us to hone our skills to build rust-based protocols and libraries.
 
 Moreover, we followed the FVM specification and development since its premises. We also participated in its development by helping on the creation of an integration test framework.
-**Team code repositories
+## Team code repositories
 
 [fil-filhak](https://github.com/Bloxico/fil-filhak).
 
