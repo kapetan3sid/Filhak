@@ -1,6 +1,6 @@
 # RFP Proposal: Filhak - FVM Development Environment
 
-#Name of Project:# FVM - High level Rust SDK 
+**Name of Project:** FVM - High level Rust SDK
 
 Link to RFP: Please link to the RFP that you are submitting a proposal for.
 
@@ -10,7 +10,7 @@ Proposer: @thedivic
 
 Do you agree to open source all work you do on behalf of this RFP and dual-license under MIT, GPL, and APACHE2 licenses?: Yes
 
-Project Description
+# Project Description
 
 References
 
