@@ -1,6 +1,6 @@
 # RFP Proposal: Filhak - FVM Development Environment
 
-## Name of Project: ######FVM - High level Rust SDK 
+#Name of Project:# FVM - High level Rust SDK 
 
 Link to RFP: Please link to the RFP that you are submitting a proposal for.
 
