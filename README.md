@@ -1,6 +1,6 @@
 # RFP Proposal: Filhak - FVM Development Environment
 
-**Name of Project:** FVM - High level Rust SDK
+**Name of Project:** Filhak 
 
 **Link to RFP:** Please link to the RFP that you are submitting a proposal for.
 
@@ -60,7 +60,7 @@ These helper functions should be optimized for **developer experience,** and hid
 
 Initialized a filhak project in the given directory.
 
-Creates a `filhak.toml` configuration file, sets up the default file and directory structure, fetches go modules etc.
+Creates a `filhak.toml` configuration file, sets up the default file and directory structure, fetches **Go** modules etc.
 
 ### Filhak scripts
 
@@ -147,9 +147,9 @@ We have no plan on maintaining the SDK in this proposal. This should be arranged
 https://bloxico.com/
 ## Relevant Experience 
 
-Our team already have experience in handling wasm runtime and development of tooling around it. We spent last year designing and building the Holium project. It allowed us to hone our skills to build rust-based protocols and libraries.
+Our team have extensive experience in regards to writting in **Go** as well as experiance with **Filecoin** technology. We have successfuly developed **System Test Matrix - Lotus Filecoin test coverage improvement and visualization dashboard** and currently we are developing first phase of **Testground -  platform for testing, benchmarking, and simulating distributed and p2p systems at scale infrastructure and software revamp**.
 
-Moreover, we followed the FVM specification and development since its premises. We also participated in its development by helping on the creation of an integration test framework.
+Furthermore, we followed the FVM development since its inception. We  participated in various FVM AMA sessions as well as FVM Early Builders Check In where we indicated that we want to develop **Hardhat** inspired development enviroment for **FVM**
 ## Team code repositories
 
 [fil-filhak](https://github.com/Bloxico/fil-filhak)
