@@ -183,14 +183,14 @@ Team Member LinkedIn Profiles
 
 Team Website
 
-https://polyphene.io
-Relevant Experience
+https://bloxico.com/
+**Relevant Experience**
 
 We already have some experience in handling wasm runtime and development of tooling around it. We spent last year designing and building the Holium project. It allowed us to hone our skills to build rust-based protocols and libraries.
 
 Moreover, we followed the FVM specification and development since its premises. We also participated in its development by helping on the creation of an integration test framework.
-Team code repositories
+**Team code repositories
 
-Holium Rust
+[fil-filhak](https://github.com/Bloxico/fil-filhak).
 
-Holium Rust SDK
+[fil-lotus](https://github.com/Bloxico/lotus).
