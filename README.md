@@ -118,7 +118,7 @@ For each milestone, please describe:
 ## Total Budget Requested
 
 Sum up the total requested budget across all milestones, and include that figure here. Ensure that it does not exceed the total funding limit on the RFP.
-Maintenance and Upgrade Plans
+## Maintenance and Upgrade Plans
 
 We have no plan on maintaining the SDK in this proposal. This should be arranged either at a later time or in another program.
 # Team
