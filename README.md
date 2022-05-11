@@ -1,6 +1,6 @@
 # RFP Proposal: Filhak - FVM Development Environment
 
-Name of Project: FVM - High level Rust SDK 
+## Name of Project: ######FVM - High level Rust SDK 
 
 Link to RFP: Please link to the RFP that you are submitting a proposal for.
 
@@ -9,7 +9,9 @@ RFP Category: devtools-libraries
 Proposer: @thedivic
 
 Do you agree to open source all work you do on behalf of this RFP and dual-license under MIT, GPL, and APACHE2 licenses?: Yes
+
 Project Description
+
 References
 
 In the context of the FVM Early Builder program, @BlocksOnAChain suggested that we could handle the creation of a High level Rust SDK to help with the development of Rust-native actors for the FVM.
