@@ -101,6 +101,26 @@ Until then, we can focus on:
 - Development network automatization
 - Implementing helper functions for currently available Filecoin features: creating and funding accounts, sending transactions, working with deals and the retrieval market through filhak scripts.
 - Maybe implement a small set of tools for implementing new local hardcoded (built-in) actors to help other early builders in their PoC endeavors (I heard somebody’s building ERC-20 and ERC-721 token actors in Rust). These actors are (obviously) available only in the local devnet and can’t be deployed to testnet or mainnet until the networks are ready.
+## Deliverables
+
+Please describe in details what your final deliverable for this project will be.
+## Development Roadmap
+
+Please break up your development work into a clear set of milestones. You can use the milestones suggested in the RFP or create your own. This section needs to be very detailed (will vary on the project, but aim for around 2 pages for this section).
+
+For each milestone, please describe:
+
+    The software functionality that we can expect after the completion of each milestone. This should be detailed enough that it can be used to ensure that the software meets the RFP scope.
+    How many people will be working on each milestone and their roles
+    The amount of funding required for each milestone
+    How much time this milestone will take to achieve (using real dates)
+
+## Total Budget Requested
+
+Sum up the total requested budget across all milestones, and include that figure here. Ensure that it does not exceed the total funding limit on the RFP.
+Maintenance and Upgrade Plans
+
+We have no plan on maintaining the SDK in this proposal. This should be arranged either at a later time or in another program.
 # Team
 ## Contact Info
 
