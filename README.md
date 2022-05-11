@@ -147,7 +147,10 @@ We have no plan on maintaining the SDK in this proposal. This should be arranged
 https://bloxico.com/
 ## Relevant Experience 
 
-Our team have extensive experience in regards to writting in **Go** as well as experiance with **Filecoin** technology. We have successfuly developed **System Test Matrix - Lotus Filecoin test coverage improvement and visualization dashboard** and currently we are developing first phase of **Testground -  platform for testing, benchmarking, and simulating distributed and p2p systems at scale infrastructure and software revamp**.
+Our team have extensive experience in regards to writting in **Go** as well as experiance with **Filecoin** technology. We have successfuly developed:
+- **System Test Matrix - Lotus Filecoin test coverage improvement and visualization dashboard** 
+And currently we are developing first phase of:
+- **Testground -  platform for testing, benchmarking, and simulating distributed and p2p systems at scale infrastructure and software revamp**.
 
 Furthermore, we followed the FVM development since its inception. We  participated in various FVM AMA sessions as well as FVM Early Builders Check In where we indicated that we want to develop **Hardhat** inspired development enviroment for **FVM**
 ## Team code repositories
