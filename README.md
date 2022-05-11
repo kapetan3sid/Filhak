@@ -12,185 +12,126 @@ Do you agree to open source all work you do on behalf of this RFP and dual-licen
 
 # Project Description
 
-## References
+**Filhak** (`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
 
-In the context of the FVM Early Builder program, @BlocksOnAChain suggested that we could handle the creation of a High level Rust SDK to help with the development of Rust-native actors for the FVM.
+It allows FVM developers to:
 
-The following specifications are meant to produce a Rust crate that could be the only fvm_* crate-related import to produce valid code. The different specifications have multiple references:
+- Easily launch a (stripped-down) local devnet Filecoin node (+FVM), with no setup required
+- One or more **Go** packages that implement helper functions used in scripting **tasks** that are common to actor development (deploying and calling actors, creating & funding accounts, working with deals and the retrieval market etc)
+- Task runner (similar to Hardhat Runner) that is used to run your Go tasks
+- Tools and helpers to write and run **integration tests** **that interact** with the local filhak devnet to test your actors.
+- Deploy your custom actors to the testnet and mainnet.
 
-    FVM spec: architecture
-    @raulk example: Hello world actor example
-    @jimpick experiment: Hanoi actor
-    Current low-level sdk
+### Filhak network
 
-Ideal behaviours
+`>$ filhak node --port 8765`
 
-From those sources came out some ideal features to implement:
-From current actors
+**Filhak network** is a (stipped-down) local development network for Filecoin that works out of the box, with no setup required.
 
-    Remove the need for the user to code the invoke function
-    Remove the need for the user to handle serde of payloads
-    Ease State structure declaration in actors and auto generate save() and load() functions
-    Some low-level SDK syscall should be available to the user if they are deemed interesting (crypto ...)
-    Have access to basic types that could be useful for actor development
+Every filhak task is executed inside the local filhak network.
 
-From other languages
+The idea is to bootstrap and connect one lotus client and miner node and run them in the background.
 
-    Have access to block & tx properties
-    Implement error handling function such as assert_* for the user to use in their contract
-    Have access to the deployed actor information (address ...)
+Nodes should be headless and stripped down of all of the features that are unnecessary for local development but are required to operate a full lotus node, to improve performance and optimize the development experience. 
 
-From specifications
+The network can be exposed for external JSON-RPC calls by running  `>$ filhak node` (if necessary).
 
-    potentially mapping dynamically-linked libraries (e.g. predefined SDK versions)
+⚠️  This assumes that lotus will integrate with FVM and at least built-in FVM actors (we can use a development version if it’s available, before launching to mainnet).
 
-    Means that the SDK core module shall not be within the actor base code but linked to it. Reduce actors’ size.
+### Filhak Go package
 
-TBC Draft Specifications
+Filhak provides one or more **Go packages** that implement common helper functions & data structures used in writing filhak tasks during actor development.
 
-Note: These are the proposed implementation choices to be developed. It is still to be discussed before considering a roadmap.
-Glue code generation and internal dispatch
-Ideal lifecycle of in a called actor
+Stuff like:
 
-Note: Each steps are either developer code or SDK generated.
+- Creating and funding accounts
+- Creating and sending transactions
+- Creating and interacting with deals
+- Working with the retrieval market
+- Interacting with deployed (or built-in) actors
+- Reading the (devnet) chain state tree
+- etc
 
-    invoke() , match proper function - SDK generated
-    Deserialize received parameters to Rust types - SDK generated
-    Call function - SDK generated
-    <state>.load() - Dev code
-    Run function code - Dev code
-    <state>.save() - Dev code
-    Insert the return data block if necessary, and return the correct block id - SDK generated
+These helper functions should be optimized for **developer experience,** and hide underlying complexity of instantiating big Lotus data structures and making multiple API calls.
 
-Mandatory elements in an actor
+### Filhak init
 
-Entry point
+`>$ filhak init [path]`
 
-    invoke() : entry point for the actor, contains a map to dispatch call to proper method based on its number.
+Initialized a filhak project in the given directory.
 
-State
+Creates a `filhak.toml` configuration file, sets up the default file and directory structure, fetches go modules etc.
 
-    Struct that derives Serialize_tuple and Deserialize_tuple
-    Should have a save() and load() implementation from a trait. Proposal for StateObject trait.
+### Filhak scripts
 
-Proposed implementation
+`>$ filhak run script.go [--task=<name>]` 
 
-This is a part where it is still kind of blurry tome. I guess that both @raulk and @BlocksOnAChain could help. I was thinking about implementing a procedural macro to generate glue code needed for an actor to work as I previously stated.
+Runs a script file on the local development network.
 
-Nonetheless, there are a few problems that I can not get my mind around:
+Given the task parameter, it executes a single task from the file.
 
-    If we generate invoke() then how can the user and future callers know which function are associated with which index ?
-    I was thinking of having something that would look like that as an actor:
+Tasks are simple go functions:
 
-use fvm_sdk::{fvm_actor};
+```go
+func DeployActorTask(ctx Context, fh *filhak.Network) { ... }
+```
 
-#[fvm_actor]
-struct State {
-    ...
+Positional parameters can be passed to tasks via the run command, and accessed inside the task code
+
+```go
+func FundAccountTask(ctx Context, fh *filhak.Network) {
+	amount := ctx.args[0]
+	addr := ctx.args[1]
+  fh.Accounts.Fund(addr, amount)
 }
+```
 
-#[fvm_actor]
-Impl State {
-    ...
-}
+## Filhak testing
 
-to generate glue code for structures (#[derive(Serialize_tuple, Deserialize_tuple, StatObject)]) and for its implementation (invoke(), deserialization of message parameters before calling matched function and serialization of the return of the called function).
+Filhak uses `go test` to run tests and provides helper functions for interacting with the filhak network and the deployed and built-in actors.
 
-But it would mean that all types as parameters and/or returned from functions should implement Serialize_tuple and/or Deserialize_tuple otherwise generated code would not work. Is it alright? Should we do it another way?
+It also provides a set of filecoin-specific assertions that can be used in your tests.
 
-    Having glue code generated means heavier actor bytecode on first deployment and more gas spent at runtime. Is it tolerable ?
+## Project Requirements
 
-Extension of low level SDK
-Access basic types
+User programmability (3rd party actors) are required for filhak to reach it’s full potential. 
 
-Access basic types (Address , TokenAmount ...) that are available in the fvm_shared crate
-Call other actor on the chain
+Until then, we can focus on:
 
-    Extend the access to the send() syscall already available.
-    Deploy new actor
-        @BlocksOnAChain @raulk I am currently wondering if there is currently a way to deploy actor from one already deployed (a Factory use case). Would you have more information on that?
-
-Access network, message and actor information
-
-Available information
-Note: Syscall to be extended so that the developer can access it
-
-    Current actor
-        root() : current root of IPLD state
-        current_balance() : self-explanatory
-    Network
-        curr_epoch() : current chain epoch
-            Note: Should sanitize function naming
-        version() : current network version
-        base_fee() : current base fee
-        total_fil_circ_supply() : total fil supply
-    Message
-        caller() : actor id of the caller
-        receiver() : actor id of the receiver
-        method_number() : method number that was called with the message
-        params_raw(id: BlockId) : returns the message codec and parameters
-        value_received() : value received in AttoFil
-
-Complementary work
-
-    Add origin() that allows to get the actor ID as originated the transaction and not the message.
-    Add a way to check for another actor balance
-        @BlocksOnAChain @raulk Could you confirm that it does not exist ? Could not find anything related to current ref-fvm/fvm_sdk or ref-fvm/fvm_shared. Also I do not see an easy way of doing so without adding another syscall so that might have to be discussed and maybe excluded of the scope.
-
-Error handling
-
-** Add assert_* macros
-
-    Useful macro for the user to panic based on conditions.
-    Need to also export an abort macro. Available in low-level SDK.
-
-TODO Deliverables
-
-Please describe in details what your final deliverable for this project will be.
-TODO Development Roadmap
-
-Please break up your development work into a clear set of milestones. You can use the milestones suggested in the RFP or create your own. This section needs to be very detailed (will vary on the project, but aim for around 2 pages for this section).
-
-For each milestone, please describe:
-
-    The software functionality that we can expect after the completion of each milestone. This should be detailed enough that it can be used to ensure that the software meets the RFP scope.
-    How many people will be working on each milestone and their roles
-    The amount of funding required for each milestone
-    How much time this milestone will take to achieve (using real dates)
-
-TODO Total Budget Requested
-
-Sum up the total requested budget across all milestones, and include that figure here. Ensure that it does not exceed the total funding limit on the RFP.
-Maintenance and Upgrade Plans
-
-We have no plan on maintaining the SDK in this proposal. This should be arranged either at a later time or in another program.
+- Development network automatization
+- Implementing helper functions for currently available Filecoin features: creating and funding accounts, sending transactions, working with deals and the retrieval market through filhak scripts.
+- Maybe implement a small set of tools for implementing new local hardcoded (built-in) actors to help other early builders in their PoC endeavors (I heard somebody’s building ERC-20 and ERC-721 token actors in Rust). These actors are (obviously) available only in the local devnet and can’t be deployed to testnet or mainnet until the networks are ready.
 # Team
 ## Contact Info
 
 **On Filecoin slack:**
 
-    @philippe Métais
-    @thomas
+    @Nikola Divic
+    @Andreja Markovic
 
 ## Team Members
 
-    Philippe Métais: @PhilippeMts
-    Thomas Chataigner: @tchataigner
+    Nikola Divic: @TheDivic
+    Milos Sekuloski: @milos1991
+    Darko Brdareski: @brdji
 
 ## Team Member LinkedIn Profiles
 
-    Thomas Chataigner:
+    [Nikola Divic](https://www.linkedin.com/in/thedivic/)
+    [Milos Sekuloski](https://www.linkedin.com/in/milos-sekuloski-488a93166/)
+    [Darko Brdareski](https://www.linkedin.com/in/darko-brdareski-b7463b63/)
+    [Andreja Markovic](https://www.linkedin.com/in/andreja-markovic-6704ba13b/)
 
 ## Team Website
 
 https://bloxico.com/
 ## Relevant Experience 
 
-We already have some experience in handling wasm runtime and development of tooling around it. We spent last year designing and building the Holium project. It allowed us to hone our skills to build rust-based protocols and libraries.
+Our team already have experience in handling wasm runtime and development of tooling around it. We spent last year designing and building the Holium project. It allowed us to hone our skills to build rust-based protocols and libraries.
 
 Moreover, we followed the FVM specification and development since its premises. We also participated in its development by helping on the creation of an integration test framework.
 ## Team code repositories
 
-[fil-filhak](https://github.com/Bloxico/fil-filhak).
+[fil-filhak](https://github.com/Bloxico/fil-filhak)
 
-[fil-lotus](https://github.com/Bloxico/lotus).
+[fil-lotus](https://github.com/Bloxico/lotus)
