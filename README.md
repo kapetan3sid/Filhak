@@ -137,10 +137,10 @@ We have no plan on maintaining the SDK in this proposal. This should be arranged
 
 ## Team Member LinkedIn Profiles
 
-    [Nikola Divic](https://www.linkedin.com/in/thedivic/).
-    [Milos Sekuloski](https://www.linkedin.com/in/milos-sekuloski-488a93166/).
-    [Darko Brdareski](https://www.linkedin.com/in/darko-brdareski-b7463b63/).
-    [Andreja Markovic](https://www.linkedin.com/in/andreja-markovic-6704ba13b/).
+[Nikola Divic](https://www.linkedin.com/in/thedivic/).
+   [Milos Sekuloski](https://www.linkedin.com/in/milos-sekuloski-488a93166/).
+   [Darko Brdareski](https://www.linkedin.com/in/darko-brdareski-b7463b63/).
+   [Andreja Markovic](https://www.linkedin.com/in/andreja-markovic-6704ba13b/).
 
 ## Team Website
 
