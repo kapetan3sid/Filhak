@@ -16,7 +16,7 @@ Do you agree to open source all work you do on behalf of this RFP and dual-licen
 
 After our research of the existing **EVM** tooling we realized how extensive and well rounded are libraries, SDKs and plugins for it. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
 
-Above all other tools there is a one stop sandbox **Hardhat** where developers are able to compile, deploy, test, and debug EVM smart contracts.
+Above all other tools there is **Hardhat**: A one stop sandbox where developers are able to compile, deploy, test, and debug EVM smart contracts
 
 ## Filhak 
 (`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
