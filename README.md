@@ -18,7 +18,8 @@ After our research of the existing **EVM** tooling we realized how extensive and
 
 Above all other tools there is a one stop sandbox **Hardhat** where developers are able to compile, deploy, test, and debug EVM smart contracts.
 
-**Filhak** (`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
+## Filhak 
+(`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
 
 It allows FVM developers to:
 
