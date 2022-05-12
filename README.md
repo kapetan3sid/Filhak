@@ -12,6 +12,12 @@ Do you agree to open source all work you do on behalf of this RFP and dual-licen
 
 # Project Description
 
+## Motivation
+
+After our research of the existing **EVM** tooling we realized how extensive and well rounded are libraries, SDKs and plugins for it. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
+
+Above all other tools there is a one stop sandbox **Hardhat** where developers are able to compile, deploy, test, and debug EVM smart contracts.
+
 **Filhak** (`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
 
 It allows FVM developers to:
@@ -120,7 +126,10 @@ For each milestone, please describe:
 Sum up the total requested budget across all milestones, and include that figure here. Ensure that it does not exceed the total funding limit on the RFP.
 ## Maintenance and Upgrade Plans
 
-We have no plan on maintaining the SDK in this proposal. This should be arranged either at a later time or in another program.
+Our MVP version consist of 5 essential functionalities: 
+1.
+
+However, we plan on maintaining existing codebase as well as develop and integrate additional features such as: 
 # Team
 ## Contact Info
 
