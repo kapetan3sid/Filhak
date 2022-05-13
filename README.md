@@ -43,7 +43,8 @@ For MVP version **Filhak** will consist of these functionalities:
 
 ## Development Roadmap
 
-Project development for **MVP** version will last for 4 months and will consist of one milestone. 
+Project development for **MVP** version will last from 1st June until 30th September (4 months) and will consist of one milestone. 
+![My Remote Image](https://www.dropbox.com/s/k1pyerxvs3nj9ji/Capture.PNG?dl=0)
 
 Team working on the project:
 - Nikola Divic - System Architect
