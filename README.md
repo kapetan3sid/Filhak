@@ -12,16 +12,6 @@ Do you agree to open source all work you do on behalf of this RFP and dual-licen
 
 # Project Description
 
-## Motivation
-
-After our research of the existing **EVM** tooling we realized how extensive and well rounded are SDKs, libraries and plugins. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
-
-Above all other **EVM** tools stand:
-
-**Hardhat** - A one stop sandbox where developers are able to compile, deploy, test, and debug EVM smart contracts. 
-
-We believe that sandbox similar to **Hardhat** would be highly valuable for developers that want to explore **FVM** and would greately ease the building process.
-
 ## Filhak 
 (`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
 
@@ -32,6 +22,16 @@ It allows FVM developers to:
 - Task runner (similar to Hardhat Runner) that is used to run your Go tasks
 - Tools and helpers to write and run **integration tests** **that interact** with the local **Filhak** devnet to test your actors.
 - Deploy your custom actors to the testnet and mainnet.
+
+## Motivation
+
+After our research of the existing **EVM** tooling we realized how extensive and well rounded are SDKs, libraries and plugins. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
+
+Above all other **EVM** tools stand:
+
+**Hardhat** - A one stop sandbox where developers are able to compile, deploy, test, and debug EVM smart contracts. 
+
+We believe that sandbox similar to **Hardhat** would be highly valuable for developers that want to explore **FVM** and would greately ease the building process.
 
 ## Deliverables
 
@@ -120,13 +120,13 @@ func FundAccountTask(ctx Context, fh *filhak.Network) {
 }
 ```
 
-## Filhak testing
+### Filhak testing
 
 Filhak uses `go test` to run tests and provides helper functions for interacting with the filhak network and the deployed and built-in actors.
 
 It also provides a set of filecoin-specific assertions that can be used in your tests.
 
-## Project Requirements
+### Project Requirements
 
 User programmability (3rd party actors) are required for filhak to reach it’s full potential. 
 
