@@ -14,13 +14,13 @@ Do you agree to open source all work you do on behalf of this RFP and dual-licen
 
 ## Motivation
 
-After our research of the existing **EVM** tooling we realized how extensive and well rounded are libraries, SDKs and plugins for it. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
+After our research of the existing **EVM** tooling we realized how extensive and well rounded are SDKs, libraries and plugins. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
 
-Above all other tools stand:
+Above all other **EVM** tools stand:
 
 **Hardhat** - A one stop sandbox where developers are able to compile, deploy, test, and debug EVM smart contracts. 
 
-We believe that sandbox similar to **Hardhat** would be highly valuable for developers that want to onboard on **FVM** and would greately ease the building process.
+We believe that sandbox similar to **Hardhat** would be highly valuable for developers that want to explore **FVM** and would greately ease the building process.
 
 ## Filhak 
 (`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
@@ -30,12 +30,12 @@ It allows FVM developers to:
 - Easily launch a (stripped-down) local devnet Filecoin node (+FVM), with no setup required
 - One or more **Go** packages that implement helper functions used in scripting **tasks** that are common to actor development (deploying and calling actors, creating & funding accounts, working with deals and the retrieval market etc)
 - Task runner (similar to Hardhat Runner) that is used to run your Go tasks
-- Tools and helpers to write and run **integration tests** **that interact** with the local filhak devnet to test your actors.
+- Tools and helpers to write and run **integration tests** **that interact** with the local **Filhak** devnet to test your actors.
 - Deploy your custom actors to the testnet and mainnet.
 
 ## Deliverables
 
-For our MVP version **Filhak** will consist of these functionalities:
+For MVP version **Filhak** will consist of these functionalities:
 1. Dev net automatization, stripped down lotus node
 2. CLI tool - start dev net node, helper functions 
 3. Support Filhak scrypts 
@@ -45,7 +45,7 @@ For our MVP version **Filhak** will consist of these functionalities:
 
 ## Development Roadmap
 
-Our project development for **MVP** version will last for 4 months and will consist of one milestone. 
+Project development for **MVP** version will last for 4 months and will consist of one milestone. 
 
 Team working on the project:
 - Nikola Divic - System Architect
@@ -137,8 +137,8 @@ Until then, we can focus on:
 - Maybe implement a small set of tools for implementing new local hardcoded (built-in) actors to help other early builders in their PoC endeavors (I heard somebody’s building ERC-20 and ERC-721 token actors in Rust). These actors are (obviously) available only in the local devnet and can’t be deployed to testnet or mainnet until the networks are ready.
 
 ## Total Budget Requested
+XXXXX USD
 
-Sum up the total requested budget across all milestones, and include that figure here. Ensure that it does not exceed the total funding limit on the RFP.
 ## Maintenance and Upgrade Plans
 
 We plan on maintaining existing codebase as well as develop and integrate additional features such as: 
@@ -148,7 +148,7 @@ We plan on maintaining existing codebase as well as develop and integrate additi
 - Integrate VS Code extension for running tests
 - Etc
 
-⚠️ Some of these future features depend on FVM delivery
+⚠️ Some of these future features depend on FVM delivery.
 
 Our end goal is to develop "Filecoin Simulation" similar to what **Ganache** is offering, where developers will be able to quickly fire up a personal **Filecoin** blockchain which they can use to run tests, execute commands, and inspect state while controlling how the chain operates.
 
@@ -174,6 +174,8 @@ Our end goal is to develop "Filecoin Simulation" similar to what **Ganache** is 
    
    [Darko Brdareski](https://www.linkedin.com/in/darko-brdareski-b7463b63/).
    
+   [Katarina Milosavljevic](https://www.linkedin.com/in/milosavljevicgkatarina/).
+   
    [Andreja Markovic](https://www.linkedin.com/in/andreja-markovic-6704ba13b/).
 
 ## Team Website
@@ -182,12 +184,12 @@ https://bloxico.com/
 ## Relevant Experience 
 
 Our team have extensive experience in regards to writting in **Go** as well as experiance with **Filecoin** technology. We have successfuly developed:
-- **System Test Matrix - Lotus Filecoin test coverage improvement and visualization dashboard** 
+- **System Test Matrix** - Lotus Filecoin test coverage improvement and visualization dashboard.
 
 And currently we are developing first phase of:
-- **Testground -  platform for testing, benchmarking, and simulating distributed and p2p systems at scale infrastructure and software revamp**.
+- **Testground** -  platform for testing, benchmarking, and simulating distributed and p2p systems at scale infrastructure and software revamp.
 
-Furthermore, we followed the FVM development since its inception. We  participated in various **FVM AMA** sessions as well as **FVM Early Builders Check In** where we indicated that we want to develop **Hardhat** inspired development enviroment for **FVM**
+Furthermore, we followed the FVM development since its inception. We  participated in various **FVM AMA** sessions as well as recurring **FVM Early Builders Check In** where we indicated that we would like to to develop **Hardhat** inspired development enviroment for **FVM**
 ## Team code repositories
 
 [fil-filhak](https://github.com/Bloxico/fil-filhak)
