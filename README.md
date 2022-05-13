@@ -12,7 +12,7 @@ Do you agree to open source all work you do on behalf of this RFP and dual-licen
 
 # Project Description
 
-## Filhak 
+### Filhak 
 (`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
 
 It allows FVM developers to:
@@ -23,7 +23,7 @@ It allows FVM developers to:
 - Tools and helpers to write and run **integration tests** **that interact** with the local **Filhak** devnet to test your actors.
 - Deploy your custom actors to the testnet and mainnet.
 
-## Motivation
+### Motivation
 
 After our research of the existing **EVM** tooling we realized how extensive and well rounded are SDKs, libraries and plugins. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
 
