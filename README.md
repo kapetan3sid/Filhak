@@ -23,7 +23,7 @@ It allows FVM developers to:
 
 ### Motivation
 
-After our research of the existing **EVM** tooling we realized how extensive and well rounded are SDKs, libraries and plugins. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
+After our research of the existing **EVM** tooling we realized how extensive and well rounded SDKs, libraries and plugins are. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
 
 Above all other **EVM** tools stand:
 
