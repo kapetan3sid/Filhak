@@ -161,16 +161,10 @@ Our end goal is to develop "Filecoin Simulation" similar to what **Ganache** is 
 ## Team Members
 
     Nikola Divic: @TheDivic
-    Milos Sekuloski: @milos1991
-    Darko Brdareski: @brdji
 
 ## Team Member LinkedIn Profiles
 
 [Nikola Divic](https://www.linkedin.com/in/thedivic/).
-
-   [Milos Sekuloski](https://www.linkedin.com/in/milos-sekuloski-488a93166/).
-   
-   [Darko Brdareski](https://www.linkedin.com/in/darko-brdareski-b7463b63/).
    
    [Katarina Milosavljevic](https://www.linkedin.com/in/milosavljevicgkatarina/).
    
