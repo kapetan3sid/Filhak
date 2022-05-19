@@ -4,11 +4,11 @@
 
 **Proposal Category:** `devtools-libraries`
 
-**Proposer:** @thedivic
+**Proposer:** `@thedivic`
 
-Do you agree to open source all work you do on behalf of this RFP and dual-license under MIT, GPL, and APACHE2 licenses?: Yes
+Do you agree to open source all work you do on behalf of this RFP and dual-license under MIT, GPL, and APACHE2 licenses?: `Yes`
 
-# Project Description
+## Project Description
 
 ### Filhak 
 (`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
@@ -16,49 +16,36 @@ Do you agree to open source all work you do on behalf of this RFP and dual-licen
 It allows FVM developers to:
 
 - Easily launch a (stripped-down) local devnet Filecoin node (+FVM), with no setup required
-- One or more **Go** packages that implement helper functions used in scripting **tasks** that are common to actor development (deploying and calling actors, creating & funding accounts, working with deals and the retrieval market etc)
-- Task runner (similar to Hardhat Runner) that is used to run your Go tasks
-- Tools and helpers to write and run **integration tests** **that interact** with the local **Filhak** devnet to test your actors.
+- Use one or more **Go** packages that implement helper functions used in scripting **tasks** that are common to actor development (deploying and calling actors, creating & funding accounts, working with deals and the retrieval market etc)
+- Use the task runner (similar to Hardhat Runner) that is used to run your Go tasks
+- Use tools and helpers to write and run **integration tests** **that interact** with the local **Filhak** devnet to test your actors.
 - Deploy your custom actors to the testnet and mainnet.
 
 ### Motivation
 
-After our research of the existing **EVM** tooling we realized how extensive and well rounded SDKs, libraries and plugins are. Even though there are some more "advanced" enviroments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
+After our research of the existing **EVM** tooling we realized how extensive and well rounded SDKs, libraries and plugins are. Even though there are some more "advanced" environments based on **WASM**, it was quite obvious to us why **EVM** is currently most utilized in blockchain and why it is so easy to build on it. 
 
 Above all other **EVM** tools stand:
 
 **Hardhat** - A one stop sandbox where developers are able to compile, deploy, test, and debug EVM smart contracts. 
 
-We believe that sandbox similar to **Hardhat** would be highly valuable for developers that want to explore **FVM** and would greately ease the building process.
+We believe that sandbox similar to **Hardhat** would be highly valuable for developers that want to explore **FVM** and would greatly ease the building process.
 
-## Deliverables
+## Features in-depth
 
-For MVP version **Filhak** will consist of these functionalities:
-1. Dev net automatization, stripped down lotus node
-2. CLI tool - start dev net node, helper functions 
-3. Support Filhak scrypts 
-4. Test Helper packet
-5. CLI test runner
-6. Integrate existing actor libraries/actor templating
+### Filhak init
 
-## Development Roadmap
+`>$ filhak init [path]`
 
-Project development for **MVP** version will last from 1st June until 30th September (4 months) and will consist of one milestone. 
+Initializes a filhak project in the given directory.
 
-Team working on the project:
-- Nikola Divic - System Architect
-- Darko Brdareski - Go Developer
-- Milos Sekuloski - Go Developer
-- Katarina Milosavljevic - Project Manager
-- Andreja Markovic - Product Owner
-
-Funding requested: XXXXX USD 
+Creates a `filhak.toml` configuration file, sets up the default file and directory structure, fetches **Go** modules etc.
 
 ### Filhak network
 
 `>$ filhak node --port 8765`
 
-**Filhak network** is a (stipped-down) local development network for Filecoin that works out of the box, with no setup required.
+**Filhak network** is a (stripped-down) local development network for Filecoin that works out of the box, with no setup required.
 
 Every filhak task is executed inside the local filhak network.
 
@@ -71,6 +58,8 @@ The network can be exposed for external JSON-RPC calls by running  `>$ filhak no
 ⚠️  This assumes that lotus will integrate with FVM and at least built-in FVM actors (we can use a development version if it’s available, before launching to mainnet).
 
 ### Filhak Go package
+
+`import "github.com/Bloxico/filhak/script"`
 
 Filhak provides one or more **Go packages** that implement common helper functions & data structures used in writing filhak tasks during actor development.
 
@@ -85,14 +74,6 @@ Stuff like:
 - etc
 
 These helper functions should be optimized for **developer experience,** and hide underlying complexity of instantiating big Lotus data structures and making multiple API calls.
-
-### Filhak init
-
-`>$ filhak init [path]`
-
-Initialized a filhak project in the given directory.
-
-Creates a `filhak.toml` configuration file, sets up the default file and directory structure, fetches **Go** modules etc.
 
 ### Filhak scripts
 
@@ -120,35 +101,94 @@ func FundAccountTask(ctx Context, fh *filhak.Network) {
 
 ### Filhak testing
 
+`import "github.com/Bloxico/filhak/testing"`
+
 Filhak uses `go test` to run tests and provides helper functions for interacting with the filhak network and the deployed and built-in actors.
 
 It also provides a set of filecoin-specific assertions that can be used in your tests.
 
-### Project Requirements
+### Filhak templates
 
-User programmability (3rd party actors) are required for filhak to reach it’s full potential. 
+`>$ filhak template <template_name> [--name=<local_name>]` 
 
-Until then, we can focus on:
+You can use filhak to instantiate actors from existing best-practice, reviewed actor templates implemented by other builders
+or by PL developers (inspired by OpenZeppelin contracts).
+Templated actors then can be further extended with additional business logic.
 
-- Development network automatization
-- Implementing helper functions for currently available Filecoin features: creating and funding accounts, sending transactions, working with deals and the retrieval market through filhak scripts.
-- Maybe implement a small set of tools for implementing new local hardcoded (built-in) actors to help other early builders in their PoC endeavors (I heard somebody’s building ERC-20 and ERC-721 token actors in Rust). These actors are (obviously) available only in the local devnet and can’t be deployed to testnet or mainnet until the networks are ready.
+The repository that holds these contracts will be determined in sync with other early builders and PL developers and filhak will pull the templates from that repo and instantiate them locally.
 
-## Total Budget Requested
-XXXXX USD
+## Milestones and deliverables
+
+
+### Milestone 1 - Filhak Network
+
+**Deliverables:**
+
+- `filhak` CLI tool
+- project scaffolding and configuration 
+- launch and interact with the development network via `filhak node` command
+
+**Funding for this milestone:**
+tbd- $
+
+**Estimated Milestone Delivery:**
+End of July 2022
+
+### Milestone 2 - Filhak Scripting
+
+**Deliverables:**
+
+- run filhak scripts via the `filhak run script.go [--task=<name>]` command on the local devnet
+- implement the `github.com/Bloxico/filhak/script` helper package
+- interact with locally deployed actors in scripts using the helper functions
+
+**Funding for this milestone:**
+tbd- $
+
+**Estimated Milestone Delivery:**
+End of September 2022
+
+### Milestone 3 - Filhak Testing
+
+- run filhak (integration) tests via the `filhak test` command on the local devnet
+- implement the `github.com/Bloxico/filhak/test` helper package
+
+**Funding for this milestone:**
+tbd- $
+
+**Estimated Milestone Delivery:**
+End of November 2022
+
+### Milestone 4 - Templates & developer experience improvements
+
+- instantiate common actors from best-practice templates via the `filhak template` command
+- work with other early builders on structuring and populating the best-practice actor repository
+- test filhak on existing 3rd party actors, look for feedback and possible developer experience improvements
+
+**Funding for this milestone:**
+tbd- $
+
+**Estimated Milestone Delivery:**
+End of January 2023
 
 ## Maintenance and Upgrade Plans
 
-We plan on maintaining existing codebase as well as develop and integrate additional features such as: 
+We plan on maintaining our existing codebase as well as to develop and integrate additional features such as: 
 
-- Test existing Rust actors with **Filhak**  
-- Deploy actors on Testnet and Mainnet
-- Integrate VS Code extension for running tests
-- Etc
+- Actor deployment on Testnet and Mainnet as soon as it's available
+- Implement a VS Code extension for filhak to improve the dev experience
 
 ⚠️ Some of these future features depend on FVM delivery.
 
-Our end goal is to develop "Filecoin Simulation" similar to what **Ganache** is offering, where developers will be able to quickly fire up a personal **Filecoin** blockchain which they can use to run tests, execute commands, and inspect state while controlling how the chain operates.
+🚀 **Moonshot**: Our end goal is to develop "Filecoin Simulation" similar to what **Ganache** is offering, where developers will be able to quickly fire up a personal **Filecoin** blockchain which they can use to run tests, execute commands, and inspect state while controlling how the chain operates. But this is a long-shot and way out of scope for this proposal.
+
+## Project Requirements
+
+- User programmability (3rd party actors) are required for filhak to reach it’s full potential. 
+- Feedback from other early builders and PL developers is highly recommended, so we can improve the development experience of our framework
+
+## Total Budget Requested
+XXXXX USD
 
 # Team
 ## Contact Info
