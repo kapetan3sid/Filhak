@@ -130,7 +130,9 @@ The repository that holds these contracts will be determined in sync with other 
 
 **Funding for this milestone:**
 
-+ 38.000,00- $
++ 38.000,00 $
+
+For M1 two full time **Go** developers will be employed
 
 **Estimated Milestone Delivery:**
 End of July 2022
@@ -144,7 +146,10 @@ End of July 2022
 - interact with locally deployed actors in scripts using the helper functions
 
 **Funding for this milestone:**
-+ 40.000,00- $
+
++ 40.000,00 $
+
+For M1 two full time **Go** developers will be employed
 
 **Estimated Milestone Delivery:**
 End of September 2022
@@ -155,7 +160,10 @@ End of September 2022
 - implement the `github.com/Bloxico/filhak/test` helper package
 
 **Funding for this milestone:**
-+ 35.000,00- $
+
++ 35.000,00 $
+
+For M1 two full time **Go** developers will be employed
 
 **Estimated Milestone Delivery:**
 End of November 2022
@@ -167,7 +175,11 @@ End of November 2022
 - test filhak on existing 3rd party actors, look for feedback and possible developer experience improvements
 
 **Funding for this milestone:**
-+ 45.000,00- $
+
++ 41.000,00 $
+
+For M1 two full time **Go** developers will be employed.
+
 
 **Estimated Milestone Delivery:**
 End of January 2023
@@ -202,10 +214,13 @@ XXXXX USD
 ## Team Members
 
     Nikola Divic: @TheDivic
+    Bojan Milinkovic: @bokimilinkovic 
 
 ## Team Member LinkedIn Profiles
 
 [Nikola Divic](https://www.linkedin.com/in/thedivic/).
+
+   [Bojan Milinkovic](https://www.linkedin.com/in/bojan-milinkovic-169780151/).
    
    [Katarina Milosavljevic](https://www.linkedin.com/in/milosavljevicgkatarina/).
    
