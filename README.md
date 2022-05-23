@@ -184,7 +184,7 @@ For M1 two full time **Go** developers will be employed.
 **Estimated Milestone Delivery:**
 End of January 2023
 
-![ezcv logo](raw.githubusercontent.com/kapetan3sid/Filhak/blob/main/Capture.PNG)
+!([raw.githubusercontent.com/kapetan3sid/Filhak/blob/main/Capture.PNG](https://www.google.com/search?q=picture&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiy0puusvX3AhWZSfEDHdYYAWMQ_AUoAXoECAIQAw&biw=1536&bih=711&dpr=1.25#imgrc=YXgcNflll9kS8M))
 
 ## Maintenance and Upgrade Plans
 
