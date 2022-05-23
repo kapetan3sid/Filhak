@@ -129,7 +129,8 @@ The repository that holds these contracts will be determined in sync with other 
 - launch and interact with the development network via `filhak node` command
 
 **Funding for this milestone:**
-tbd- $
+
++ 38.000,00- $
 
 **Estimated Milestone Delivery:**
 End of July 2022
@@ -143,7 +144,7 @@ End of July 2022
 - interact with locally deployed actors in scripts using the helper functions
 
 **Funding for this milestone:**
-tbd- $
++ 40.000,00- $
 
 **Estimated Milestone Delivery:**
 End of September 2022
@@ -154,7 +155,7 @@ End of September 2022
 - implement the `github.com/Bloxico/filhak/test` helper package
 
 **Funding for this milestone:**
-tbd- $
++ 35.000,00- $
 
 **Estimated Milestone Delivery:**
 End of November 2022
@@ -166,7 +167,7 @@ End of November 2022
 - test filhak on existing 3rd party actors, look for feedback and possible developer experience improvements
 
 **Funding for this milestone:**
-tbd- $
++ 45.000,00- $
 
 **Estimated Milestone Delivery:**
 End of January 2023
