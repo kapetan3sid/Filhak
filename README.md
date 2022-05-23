@@ -211,10 +211,13 @@ We plan on maintaining our existing codebase as well as to develop and integrate
 
 ## Total Budget Requested
 
-**M1: 38,000 USD** - **27,520 USD** at the beggining of M1 and **10,480 USD** upon successful completion of M1
-**M2: 40,000 USD** - **27,520 USD** at the beggining of M1 and **12,480 USD** upon successful completion of M2
-**M3: 35,000 USD** - **27,520 USD** at the beggining of M1 and **7,480 USD** upon successful completion of M3
-**M4: 41,000 USD** - **27,520 USD** at the beggining of M1 and **13,480 USD** upon successful completion of M4
+- **M1: 38,000 USD** : **27,520 USD** at the beggining of M1 and **10,480 USD** upon successful completion of M1
+
+- **M2: 40,000 USD** : **27,520 USD** at the beggining of M1 and **12,480 USD** upon successful completion of M2
+
+- **M3: 35,000 USD** : **27,520 USD** at the beggining of M1 and **7,480 USD** upon successful completion of M3
+
+- **M4: 41,000 USD** : **27,520 USD** at the beggining of M1 and **13,480 USD** upon successful completion of M4
 
 **Total:** 145,000 USD
 
