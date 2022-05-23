@@ -184,7 +184,7 @@ For M1 two full time **Go** developers will be employed.
 **Estimated Milestone Delivery:**
 End of January 2023
 
-!(https://github.com/kapetan3sid/Filhak/blob/main/Capture.PNG)
+![](https://github.com/kapetan3sid/Filhak/blob/main/Capture.PNG)
 
 ## Maintenance and Upgrade Plans
 
