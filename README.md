@@ -259,6 +259,7 @@ $42,000 - Time and Material
 
 $30,000 - Completion of M4
 
+
 **Total Budget: $288,000**
 
 # Team
