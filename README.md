@@ -130,8 +130,6 @@ The repository that holds these contracts will be determined in sync with other 
 
 **Funding for this milestone:**
 
-At the beggining of milestone we would like to request payment of 29,380 **USD**at in order to cover milestone funding. Upon successful completion of M1 we would request for the remainder of M1 Grant.
-
 + 38.000,00 USD
 
 For M1 two full time **Go** developers will be employed
@@ -149,11 +147,9 @@ End of July 2022
 
 **Funding for this milestone:**
 
-At the beggining of milestone we would like to request payment of 29,380 **USD**at in order to cover milestone funding. Upon successful completion of M2 we would request for the remainder of M1 Grant.
-
 + 40.000,00 USD
 
-For M1 two full time **Go** developers will be employed
+For M2 two full time **Go** developers will be employed
 
 **Estimated Milestone Delivery:**
 End of September 2022
@@ -165,11 +161,9 @@ End of September 2022
 
 **Funding for this milestone:**
 
-At the beggining of milestone we would like to request payment of 29,380 **USD**at in order to cover milestone funding. Upon successful completion of M3 we would request for the remainder of M1 Grant.
-
 + 35.000,00 USD
 
-For M1 two full time **Go** developers will be employed
+For M3 two full time **Go** developers will be employed
 
 **Estimated Milestone Delivery:**
 End of November 2022
@@ -186,7 +180,7 @@ At the beggining of milestone we would like to request payment of 29,380 **USD**
 
 + 41.000,00 USD
 
-For M1 two full time **Go** developers will be employed.
+For M4 two full time **Go** developers will be employed.
 
 **Estimated Milestone Delivery:**
 End of January 2023
@@ -211,15 +205,17 @@ We plan on maintaining our existing codebase as well as to develop and integrate
 
 ## Total Budget Requested
 
-- **M1: 38,000 USD** : 29,380 **USD** at the beggining of M1 and 8,620 **USD** upon successful completion of M1
+- **Time and Material:** 27,460 USD
 
-- **M2: 40,000 USD** : 29,380 **USD** at the beggining of M1 and 10,480 **USD** upon successful completion of M2
+- **M1:** 38,000 USD
 
-- **M3: 35,000 USD** : 29,380 **USD** at the beggining of M1 and 5,480 **USD** upon successful completion of M3
+- **M2:** 40,000 USD 
 
-- **M4: 41,000 USD** : 29,380 **USD** at the beggining of M1 and 11,480 **USD** upon successful completion of M4
+- **M3:** 35,000 USD
 
-**Total:** 145,000 **USD**
+- **M4:** 41,000 USD
+
+**Total:** 172,460 USD
 
 # Team
 ## Contact Info
