@@ -130,7 +130,7 @@ The repository that holds these contracts will be determined in sync with other 
 
 **Funding for this milestone:**
 
-+ 38.000,00 USD
++ 34.000,00 USD
 
 For M1 two full time **Go** developers will be employed
 
@@ -147,7 +147,7 @@ End of July 2022
 
 **Funding for this milestone:**
 
-+ 40.000,00 USD
++ 36.000,00 USD
 
 For M2 two full time **Go** developers will be employed
 
@@ -161,7 +161,7 @@ End of September 2022
 
 **Funding for this milestone:**
 
-+ 35.000,00 USD
++ 34.000,00 USD
 
 For M3 two full time **Go** developers will be employed
 
@@ -178,7 +178,7 @@ End of November 2022
 
 At the beggining of milestone we would like to request payment of 29,380 **USD**at in order to cover milestone funding. Upon successful completion of M1 we would request for the remainder of M4 Grant.
 
-+ 41.000,00 USD
++ 37.000,00 USD
 
 For M4 two full time **Go** developers will be employed.
 
@@ -207,15 +207,15 @@ We plan on maintaining our existing codebase as well as to develop and integrate
 
 - **Time and Material:** 27,460 USD
 
-- **M1:** 38,000 USD
+- **M1:** 34,000 USD
 
-- **M2:** 40,000 USD 
+- **M2:** 36,000 USD 
 
-- **M3:** 35,000 USD
+- **M3:** 34,000 USD
 
-- **M4:** 41,000 USD
+- **M4:** 37,000 USD
 
-**Total:** 172,460 USD
+**Total:**  USD
 
 # Team
 ## Contact Info
