@@ -130,9 +130,17 @@ The repository that holds these contracts will be determined in sync with other 
 
 **Funding for this milestone:**
 
-+ 34.000,00 USD
+M1 timeline - June/July
 
-For M1 two full time **Go** developers will be employed
+For M1 two full time **Go** developers will be employed at $60 / hour.
+
+Team will be paid an estimated $21,000 per month, and $42,000 per milestone.
+
+The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
+
+Upon completion of M1, team will be paid $30,000. 
+
+**Total budget for M1 - $72,000.**
 
 **Estimated Milestone Delivery:**
 End of July 2022
@@ -147,9 +155,17 @@ End of July 2022
 
 **Funding for this milestone:**
 
-+ 36.000,00 USD
+M2 timeline - August/September
 
-For M2 two full time **Go** developers will be employed
+For M2 two full time **Go** developers will be employed at $60 / hour.
+
+Team will be paid an estimated $21,000 per month, and $42,000 per milestone.
+
+The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
+
+Upon completion of M2, team will be paid $30,000. 
+
+**Total budget for M2 - $72,000.**
 
 **Estimated Milestone Delivery:**
 End of September 2022
@@ -161,9 +177,17 @@ End of September 2022
 
 **Funding for this milestone:**
 
-+ 34.000,00 USD
+M3 timeline - October/November
 
-For M3 two full time **Go** developers will be employed
+For M3 two full time **Go** developers will be employed at $60 / hour.
+
+Team will be paid an estimated $21,000 per month, and $42,000 per milestone.
+
+The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
+
+Upon completion of M3, team will be paid $30,000. 
+
+**Total budget for M3 - $72,000.**
 
 **Estimated Milestone Delivery:**
 End of November 2022
@@ -176,9 +200,17 @@ End of November 2022
 
 **Funding for this milestone:**
 
-+ 37.000,00 USD
+M4 timeline - December/January
 
-For M4 two full time **Go** developers will be employed.
+For M4 two full time **Go** developers will be employed at $60 / hour.
+
+Team will be paid an estimated $21,000 per month, and $42,000 per milestone.
+
+The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
+
+Upon completion of M4, team will be paid $30,000. 
+
+**Total budget for M4 - $72,000.**
 
 **Estimated Milestone Delivery:**
 End of January 2023
@@ -203,17 +235,23 @@ We plan on maintaining our existing codebase as well as to develop and integrate
 
 ## Total Budget Requested
 
-- **Time and Material:** 27,460 USD
+- **M1:** 
+$42,000 - Time and Material
+$30,000 - Completion of M1
 
-- **M1:** 34,000 USD
+- **M2:**
+$42,000 - Time and Material
+$30,000 - Completion of M2
 
-- **M2:** 36,000 USD 
+- **M3:** 
+$42,000 - Time and Material
+$30,000 - Completion of M3
 
-- **M3:** 34,000 USD
+- **M4:** 
+$42,000 - Time and Material
+$30,000 - Completion of M4
 
-- **M4:** 37,000 USD
-
-**Total:**  USD
+**Total Budget: $288,000**
 
 # Team
 ## Contact Info
