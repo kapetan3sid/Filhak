@@ -176,8 +176,6 @@ End of November 2022
 
 **Funding for this milestone:**
 
-At the beggining of milestone we would like to request payment of 29,380 **USD**at in order to cover milestone funding. Upon successful completion of M1 we would request for the remainder of M4 Grant.
-
 + 37.000,00 USD
 
 For M4 two full time **Go** developers will be employed.
