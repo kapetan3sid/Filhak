@@ -236,19 +236,27 @@ We plan on maintaining our existing codebase as well as to develop and integrate
 ## Total Budget Requested
 
 - **M1:** 
+- 
 $42,000 - Time and Material
+
 $30,000 - Completion of M1
 
 - **M2:**
+- 
 $42,000 - Time and Material
+
 $30,000 - Completion of M2
 
 - **M3:** 
+- 
 $42,000 - Time and Material
+
 $30,000 - Completion of M3
 
 - **M4:** 
+- 
 $42,000 - Time and Material
+
 $30,000 - Completion of M4
 
 **Total Budget: $288,000**
