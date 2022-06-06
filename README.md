@@ -215,6 +215,8 @@ $25,000 - Completion of M2
 
     Nikola Divic: @TheDivic
     Bojan Milinkovic: @bokimilinkovic 
+    Katarina Milosavljevic
+    Andreja Markovic
 
 ## Team Member LinkedIn Profiles
 
