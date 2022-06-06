@@ -146,7 +146,7 @@ Upon completion of M2, team will be paid $25,000.
 **Estimated Milestone Delivery:**
 First Half of October 2022
 
-![](https://github.com/kapetan3sid/Filhak/blob/main/Capture.PNG)
+![](https://github.com/kapetan3sid/Filhak/blob/main/Capture.PNG) 
 
 ## Maintenance and Upgrade Plans
 
