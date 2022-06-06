@@ -13,13 +13,11 @@ Do you agree to open source all work you do on behalf of this RFP and dual-licen
 ### Filhak 
 (`>$ filhak)` is (*supposed to be*) a filecoin development environment heavily influenced by [Hardhat](https://hardhat.org/).
 
-It allows FVM developers to:
+For MVP Filhak will allow FVM developers to:
 
 - Easily launch a (stripped-down) local devnet Filecoin node (+FVM), with no setup required
 - Use one or more **Go** packages that implement helper functions used in scripting **tasks** that are common to actor development (deploying and calling actors, creating & funding accounts, working with deals and the retrieval market etc)
 - Use the task runner (similar to Hardhat Runner) that is used to run your Go tasks
-- Use tools and helpers to write and run **integration tests** **that interact** with the local **Filhak** devnet to test your actors.
-- Deploy your custom actors to the testnet and mainnet.
 
 ### Motivation
 
@@ -135,7 +133,7 @@ First half of August 2022
 
 **Funding for this milestone:**
 
-For M2 two full time **Go** developers will be employed at $60 / hour.
+For M2 two full time **Go** developers will be employed at $50 / hour.
 
 Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
 
@@ -178,7 +176,7 @@ Actor deployment on Testnet and Mainnet as soon as it's available.
 
 **Filhak extensions and pluggins**
 
-- Implement a VS Code extension for filhak to improve the dev experience
+Implement a VS Code extension for filhak to improve the dev experience
 
 ⚠️ Some of these future features depend on FVM delivery.
 
@@ -193,15 +191,15 @@ Actor deployment on Testnet and Mainnet as soon as it's available.
 
 **M1:** 
 
-$42,000 - Time and Material
+$35,000 - Time and Material
 
-$30,000 - Completion of M1
+$25,000 - Completion of M1
 
 **M2:**
 
-$42,000 - Time and Material
+$35,000 - Time and Material
 
-$30,000 - Completion of M2
+$25,000 - Completion of M2
 
 **Total Budget: $120,000**
 
