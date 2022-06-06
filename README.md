@@ -110,7 +110,7 @@ func FundAccountTask(ctx Context, fh *filhak.Network) {
 
 **Funding for this milestone:**
 
-For M1 two full time **Go** developers rate will be $50 / hour.
+For M1 two full time **Go** developers rate will be $50 / hour in order to fund the milestone.
 
 Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
 
@@ -133,7 +133,7 @@ First half of August 2022
 
 **Funding for this milestone:**
 
-For M2 two full time **Go** developers rate will be $50 / hour.
+For M2 two full time **Go** developers rate will be $50 / hour in order to fund the milestone.
 
 Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
 
