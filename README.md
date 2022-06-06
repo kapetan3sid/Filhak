@@ -99,24 +99,6 @@ func FundAccountTask(ctx Context, fh *filhak.Network) {
 }
 ```
 
-### Filhak testing
-
-`import "github.com/Bloxico/filhak/testing"`
-
-Filhak uses `go test` to run tests and provides helper functions for interacting with the filhak network and the deployed and built-in actors.
-
-It also provides a set of filecoin-specific assertions that can be used in your tests.
-
-### Filhak templates
-
-`>$ filhak template <template_name> [--name=<local_name>]` 
-
-You can use filhak to instantiate actors from existing best-practice, reviewed actor templates implemented by other builders
-or by PL developers (inspired by OpenZeppelin contracts).
-Templated actors then can be further extended with additional business logic.
-
-The repository that holds these contracts will be determined in sync with other early builders and PL developers and filhak will pull the templates from that repo and instantiate them locally.
-
 ## Milestones and deliverables
 
 
@@ -132,15 +114,15 @@ The repository that holds these contracts will be determined in sync with other 
 
 M1 timeline - June/July
 
-For M1 two full time **Go** developers will be employed at $60 / hour.
+For M1 two full time **Go** developers will be employed at $50 / hour.
 
-Team will be paid an estimated $21,000 per month, and $42,000 per milestone.
+Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
 
 The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
 
-Upon completion of M1, team will be paid $30,000. 
+Upon completion of M1, team will be paid $25,000. 
 
-**Total budget for M1 - $72,000.**
+**Total budget for M1 - $60,000.**
 
 **Estimated Milestone Delivery:**
 End of July 2022
@@ -159,61 +141,16 @@ M2 timeline - August/September
 
 For M2 two full time **Go** developers will be employed at $60 / hour.
 
-Team will be paid an estimated $21,000 per month, and $42,000 per milestone.
+Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
 
 The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
 
-Upon completion of M2, team will be paid $30,000. 
+Upon completion of M2, team will be paid $25,000. 
 
-**Total budget for M2 - $72,000.**
+**Total budget for M2 - $60,000.**
 
 **Estimated Milestone Delivery:**
 End of September 2022
-
-### Milestone 3 - Filhak Testing
-
-- run filhak (integration) tests via the `filhak test` command on the local devnet
-- implement the `github.com/Bloxico/filhak/test` helper package
-
-**Funding for this milestone:**
-
-M3 timeline - October/November
-
-For M3 two full time **Go** developers will be employed at $60 / hour.
-
-Team will be paid an estimated $21,000 per month, and $42,000 per milestone.
-
-The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
-
-Upon completion of M3, team will be paid $30,000. 
-
-**Total budget for M3 - $72,000.**
-
-**Estimated Milestone Delivery:**
-End of November 2022
-
-### Milestone 4 - Templates & developer experience improvements
-
-- instantiate common actors from best-practice templates via the `filhak template` command
-- work with other early builders on structuring and populating the best-practice actor repository
-- test filhak on existing 3rd party actors, look for feedback and possible developer experience improvements
-
-**Funding for this milestone:**
-
-M4 timeline - December/January
-
-For M4 two full time **Go** developers will be employed at $60 / hour.
-
-Team will be paid an estimated $21,000 per month, and $42,000 per milestone.
-
-The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
-
-Upon completion of M4, team will be paid $30,000. 
-
-**Total budget for M4 - $72,000.**
-
-**Estimated Milestone Delivery:**
-End of January 2023
 
 ![](https://github.com/kapetan3sid/Filhak/blob/main/Capture.PNG)
 
@@ -221,7 +158,30 @@ End of January 2023
 
 We plan on maintaining our existing codebase as well as to develop and integrate additional features such as: 
 
-- Actor deployment on Testnet and Mainnet as soon as it's available
+**Filhak testing**
+
+`import "github.com/Bloxico/filhak/testing"`
+
+Filhak uses `go test` to run tests and provides helper functions for interacting with the filhak network and the deployed and built-in actors.
+
+It also provides a set of filecoin-specific assertions that can be used in your tests.
+
+**Filhak templates**
+
+`>$ filhak template <template_name> [--name=<local_name>]` 
+
+You can use filhak to instantiate actors from existing best-practice, reviewed actor templates implemented by other builders
+or by PL developers (inspired by OpenZeppelin contracts).
+Templated actors then can be further extended with additional business logic.
+
+The repository that holds these contracts will be determined in sync with other early builders and PL developers and filhak will pull the templates from that repo and instantiate them locally.
+
+**Filhak deployment**
+
+Actor deployment on Testnet and Mainnet as soon as it's available.
+
+**Filhak extensions and pluggins**
+
 - Implement a VS Code extension for filhak to improve the dev experience
 
 ⚠️ Some of these future features depend on FVM delivery.
@@ -247,20 +207,7 @@ $42,000 - Time and Material
 
 $30,000 - Completion of M2
 
-**M3:** 
-
-$42,000 - Time and Material
-
-$30,000 - Completion of M3
-
-**M4:** 
-
-$42,000 - Time and Material
-
-$30,000 - Completion of M4
-
-
-**Total Budget: $288,000**
+**Total Budget: $120,000**
 
 # Team
 ## Contact Info
