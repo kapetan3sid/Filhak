@@ -112,8 +112,6 @@ func FundAccountTask(ctx Context, fh *filhak.Network) {
 
 **Funding for this milestone:**
 
-M1 timeline - June/July
-
 For M1 two full time **Go** developers will be employed at $50 / hour.
 
 Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
@@ -125,7 +123,7 @@ Upon completion of M1, team will be paid $25,000.
 **Total budget for M1 - $60,000.**
 
 **Estimated Milestone Delivery:**
-End of July 2022
+First half of August 2022
 
 ### Milestone 2 - Filhak Scripting
 
@@ -136,8 +134,6 @@ End of July 2022
 - interact with locally deployed actors in scripts using the helper functions
 
 **Funding for this milestone:**
-
-M2 timeline - August/September
 
 For M2 two full time **Go** developers will be employed at $60 / hour.
 
@@ -150,7 +146,7 @@ Upon completion of M2, team will be paid $25,000.
 **Total budget for M2 - $60,000.**
 
 **Estimated Milestone Delivery:**
-End of September 2022
+First Half of October 2022
 
 ![](https://github.com/kapetan3sid/Filhak/blob/main/Capture.PNG)
 
