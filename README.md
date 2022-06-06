@@ -110,11 +110,11 @@ func FundAccountTask(ctx Context, fh *filhak.Network) {
 
 **Funding for this milestone:**
 
-For M1 two full time **Go** developers will be employed at $50 / hour.
+For M1 two full time **Go** developers rate will be $50 / hour.
 
 Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
 
-The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
+The estimated payment amount per month will be subject to change due to different wokring days in a month, public holidays, sick leaves, etc. 
 
 Upon completion of M1, team will be paid $25,000. 
 
@@ -133,11 +133,11 @@ First half of August 2022
 
 **Funding for this milestone:**
 
-For M2 two full time **Go** developers will be employed at $50 / hour.
+For M2 two full time **Go** developers rate will be $50 / hour.
 
 Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
 
-The estimated payment amount per month will be subject to change due to different wokring days in a month, Serbian public holidays, sick leaves, etc. 
+The estimated payment amount per month will be subject to change due to different wokring days in a month, public holidays, sick leaves, etc. 
 
 Upon completion of M2, team will be paid $25,000. 
 
