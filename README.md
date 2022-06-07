@@ -112,7 +112,7 @@ func FundAccountTask(ctx Context, fh *filhak.Network) {
 
 For M1 three full time **Go** developers rate will be $45 / hour in order to fund the milestone.
 
-However in this rate we wont include funding for **PO (Andreja Markovic)** and **PM (Katarina Milisavljevic)** positions, this will come from internal budget. Reason is that we want to have additional support for developers so that they can fully focus on development of this project.
+However in this rate we are not including funding for **PO (Andreja Markovic)** and **PM (Katarina Milisavljevic)** positions, this will come from internal budget. Reason is that we want to have additional support for developers so that they can fully focus on development of this project.
 
 Team will be paid an estimated $23,220 per month, and $46,440 per milestone.
 
@@ -137,7 +137,7 @@ First half of August 2022
 
 For M2 three full time **Go** developers rate will be $45 / hour in order to fund the milestone.
 
-However in this rate we wont include funding for **PO (Andreja Markovic)** and **PM (Katarina Milisavljevic)** positions, this will come from internal budget. Reason is that we want to have additional support for developers so that they can fully focus on development of this project.
+However in this rate we are not including funding for **PO (Andreja Markovic)** and **PM (Katarina Milisavljevic)** positions, this will come from internal budget. Reason is that we want to have additional support for developers so that they can fully focus on development of this project.
 
 Team will be paid an estimated $23,220 per month, and $46,440 per milestone.
 
