@@ -217,10 +217,18 @@ $25,000 - Completion of M2
 
 ## Team Members
 
-    Nikola Divic: @TheDivic
-    Bojan Milinkovic: @bokimilinkovic 
+**Go Developers:**
+
+    Nikola Divic @TheDivic
+    Bojan Milinkovic @bokimilinkovic 
     Stefan Gajic: @StefanGajic
+    
+**Project Manager**
+    
     Katarina Milosavljevic
+    
+**Product Owner**
+
     Andreja Markovic
 
 ## Team Member LinkedIn Profiles
