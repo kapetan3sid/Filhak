@@ -110,15 +110,17 @@ func FundAccountTask(ctx Context, fh *filhak.Network) {
 
 **Funding for this milestone:**
 
-For M1 two full time **Go** developers rate will be $50 / hour in order to fund the milestone.
+For M1 three full time **Go** developers rate will be $45 / hour in order to fund the milestone.
 
-Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
+However in this rate we wont include funding for **PO (Andreja Markovic)** and **PM (Katarina Milisavljevic)** positions, this will come from internal budget. Reason is that we want to have additional support for developers so that they can fully focus on development of this project.
+
+Team will be paid an estimated $23,220 per month, and $46,440 per milestone.
 
 The estimated payment amount per month will be subject to change due to different wokring days in a month, public holidays, sick leaves, etc. 
 
 Upon completion of M1, team will be paid $25,000. 
 
-**Total budget for M1 - $60,000.**
+**Total budget for M1 - $71,220.**
 
 **Estimated Milestone Delivery:**
 First half of August 2022
@@ -133,15 +135,17 @@ First half of August 2022
 
 **Funding for this milestone:**
 
-For M2 two full time **Go** developers rate will be $50 / hour in order to fund the milestone.
+For M2 three full time **Go** developers rate will be $45 / hour in order to fund the milestone.
 
-Team will be paid an estimated $17,500 per month, and $35,000 per milestone.
+However in this rate we wont include funding for **PO (Andreja Markovic)** and **PM (Katarina Milisavljevic)** positions, this will come from internal budget. Reason is that we want to have additional support for developers so that they can fully focus on development of this project.
+
+Team will be paid an estimated $23,220 per month, and $46,440 per milestone.
 
 The estimated payment amount per month will be subject to change due to different wokring days in a month, public holidays, sick leaves, etc. 
 
 Upon completion of M2, team will be paid $25,000. 
 
-**Total budget for M2 - $60,000.**
+**Total budget for M2 - $71,220.**
 
 **Estimated Milestone Delivery:**
 First Half of October 2022
@@ -191,17 +195,17 @@ Implement a VS Code extension for filhak to improve the dev experience
 
 **M1:** 
 
-$35,000 - Time and Material
+$46,440 - Time and Material
 
 $25,000 - Completion of M1
 
 **M2:**
 
-$35,000 - Time and Material
+$46,440 - Time and Material
 
 $25,000 - Completion of M2
 
-**Total Budget: $120,000**
+**Total Budget: $142,440**
 
 # Team
 ## Contact Info
@@ -215,6 +219,7 @@ $25,000 - Completion of M2
 
     Nikola Divic: @TheDivic
     Bojan Milinkovic: @bokimilinkovic 
+    Stefan Gajic: @StefanGajic
     Katarina Milosavljevic
     Andreja Markovic
 
@@ -223,6 +228,8 @@ $25,000 - Completion of M2
 [Nikola Divic](https://www.linkedin.com/in/thedivic/).
 
    [Bojan Milinkovic](https://www.linkedin.com/in/bojan-milinkovic-169780151/).
+   
+   [Stefan Gajic](https://www.linkedin.com/in/stefan-gajic-ns/).
    
    [Katarina Milosavljevic](https://www.linkedin.com/in/milosavljevicgkatarina/).
    
