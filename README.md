@@ -156,6 +156,10 @@ First Half of October 2022
 
 We plan on maintaining our existing codebase as well as to develop and integrate additional features such as: 
 
+**Filhak network**
+
+Adding multi-runtime support for local network through *deployers* so that there is support for both **Native deployer** and **EVM deployer**.
+
 **Filhak testing**
 
 `import "github.com/Bloxico/filhak/testing"`
