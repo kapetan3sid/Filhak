@@ -186,7 +186,7 @@ Actor deployment on Testnet and Mainnet as soon as it's available.
 
 Implement a VS Code extension for filhak to improve the dev experience
 
-⚠️ Some of these future features depend on FVM delivery.
+⚠️ **Some of these future features depend on FVM delivery.**
 
 🚀 **Moonshot**: Our end goal is to develop "Filecoin Simulation" similar to what **Ganache** is offering, where developers will be able to quickly fire up a personal **Filecoin** blockchain which they can use to run tests, execute commands, and inspect state while controlling how the chain operates. But this is a long-shot and way out of scope for this proposal.
 
